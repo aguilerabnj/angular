@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-	background-color: rgb(238, 216, 216);
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+	background-color: rgb(255, 255, 255);
+}
+
+*{
+	font-family: "Oswald", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
 }

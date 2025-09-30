@@ -1,5 +1,18 @@
 #tittle{
-	font-size: 50px;
+	font-size: 100px;
 	text-align: center;
-	color: rgb(109, 0, 0);
+	color: rgb(0, 0, 0);
+}
+.cuerpo{
+	display: flex;
+	flex-direction: row;
+	gap: 70px;
+}
+.btn {
+background-color: rgb(0, 17, 255);
+color: aliceblue;
+}
+img {
+
+	height: 200px;
 }
