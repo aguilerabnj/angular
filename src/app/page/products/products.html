@@ -1,26 +1,15 @@
 <div class="container">
 	<div class="row">
-		<div class="col-6">
+		<div *ngFor="let i of infoTarjeta" class="col-3">
 			<div class="card" >
-		<img src="../../../assets/birrrreaaaaaaaaa.jpg" class="card-img-top" alt="...">
+		<img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
 		<div class="card-body">
-			<h5 class="card-title">CERVEZA</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-				content.</p>
-			<a href="#" class="btn ">hunger</a>
+			<h5 class="card-title">{{i.titulo}}</h5>
+			<p class="card-text">{{i.descripcion}} - {{i.fechapublicacion}}</p>
+			<a href="#" class="btn btn-action ">HUNGER</a>
 		</div>
 	</div>
 		</div>
-		<div class="col-6">
-			<div class="card" >
-		<img src="../../../assets/campari.jpg" class="card-img-top" alt="...">
-		<div class="card-body">
-			<h5 class="card-title">CAMPARI</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-				content.</p>
-			<a href="#" class="btn ">hunger</a>
-		</div>
-	</div>
-		</div>
+		
 	</div>
 </div>

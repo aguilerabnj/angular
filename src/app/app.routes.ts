@@ -9,5 +9,5 @@ export const routes: Routes = [
 	{path: `about`,component: About},
 	{path: `products`, component: Products},
 	{path: `contact`, component: Contact},
-	{path: `**`, component: Home}
+	{path: ``, component: Home}
 ];

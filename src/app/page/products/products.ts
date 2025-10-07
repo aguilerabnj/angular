@@ -1,11 +1,50 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+import { Tarjeta } from '../../models/tarjeta'
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-products',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './products.html',
   styleUrl: './products.css'
 })
 export class Products {
-
+public infoTarjeta: Tarjeta[];
+/* Declaramos */
+constructor(){
+  this.infoTarjeta = [
+    {
+      id: "1t",
+      img: "../../../assets/campari.jpg",
+      alt: "campari",
+      titulo: "campari",
+      descripcion: "bebida roja ",
+      fechapublicacion: 2025
+    },
+        {
+      id: "2t",
+      img: "../../../assets/birra.jpg",
+      alt: "birra",
+      titulo: "birra",
+      descripcion: "gaseosa salada",
+      fechapublicacion: 2025
+    },
+        {
+      id: "3t",
+      img: "../../../assets/fernet.jpg",
+      alt: "fernet",
+      titulo: "FERNET",
+      descripcion: "bebida herbal",
+      fechapublicacion: 2025
+    },
+        {
+      id: "4t",
+      img: "../../../assets/gancia.jpg",
+      alt: "gancia",
+      titulo: "GANCIA",
+      descripcion: "bebida tomada con sprite",
+      fechapublicacion: 2025
+    }
+  ]
+}
 }
