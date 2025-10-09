@@ -44,7 +44,45 @@ constructor(){
       titulo: "GANCIA",
       descripcion: "bebida tomada con sprite",
       fechapublicacion: 2025
+    },
+    {
+      id: "5t",
+        img: "../../../assets/malibu.jpg",
+      alt: "malibu",
+      titulo: "MALIBU",
+      descripcion: "bebida tropical",
+      fechapublicacion: 2025
+    },
+        {
+      id: "6t",
+        img: "../../../assets/vidka.jpg",
+      alt: "vodka",
+      titulo: "VODKA",
+      descripcion: "clasica bebida fuerte",
+      fechapublicacion: 2025
+    },
+        {
+      id: "7t",
+        img: "../../../assets/OIP (1).jpg",
+      alt: "vino",
+      titulo: "VINOS",
+      descripcion: "vino tinto, blanco, y rosa",
+      fechapublicacion: 2025
+    },
+            {
+      id: "8t",
+        img: "../../../assets/aperol.jpg",
+      alt: "aperol",
+      titulo: "APEROL",
+      descripcion: "bebida a base de hierbas",
+      fechapublicacion: 2025
     }
+    
   ]
+}
+tarjetaseleccionada: any = null;
+
+verMas(tarjeta: any ){
+  this.tarjetaseleccionada = tarjeta
 }
 }

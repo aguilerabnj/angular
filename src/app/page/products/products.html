@@ -1,15 +1,33 @@
 <div class="container">
 	<div class="row">
-		<div *ngFor="let i of infoTarjeta" class="col-3">
-			<div class="card" >
-		<img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
-		<div class="card-body">
-			<h5 class="card-title">{{i.titulo}}</h5>
-			<p class="card-text">{{i.descripcion}} - {{i.fechapublicacion}}</p>
-			<a href="#" class="btn btn-action ">HUNGER</a>
+		<div *ngFor="let i of infoTarjeta" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+			<div class="card">
+				<img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
+				<div class="card-body">
+					<h5 class="card-title">{{i.titulo}}</h5>
+					<p class="card-text">{{i.descripcion}} - {{i.fechapublicacion}}</p>
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hunger" (click)="verMas(i)">
+						HUNGER
+					</button>
+				</div>
+			</div>
 		</div>
+
 	</div>
+</div>
+<div class="modal fade" id="hunger" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="exampleModalLabel">AGREGAR PRODUCTO</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<img src="{{tarjetaseleccionada?.img}}" alt="{{tarjetaseleccionada?.alt}}">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
 		</div>
-		
 	</div>
 </div>
