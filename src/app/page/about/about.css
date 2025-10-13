@@ -1,0 +1,21 @@
+.imagen{
+	display: flex;
+	justify-content: center;
+}
+.titulo{
+	display: flex;
+	justify-content: center;
+}
+.texto{
+		display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.texto2{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.container{
+	padding: 1rem;
+}

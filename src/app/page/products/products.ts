@@ -17,7 +17,7 @@ constructor(){
       id: "1t",
       img: "../../../assets/campari.jpg",
       alt: "campari",
-      titulo: "campari",
+      titulo: "CAMPARI",
       descripcion: "bebida roja ",
       fechapublicacion: 2025
     },
@@ -25,7 +25,7 @@ constructor(){
       id: "2t",
       img: "../../../assets/birra.jpg",
       alt: "birra",
-      titulo: "birra",
+      titulo: "BIRRA",
       descripcion: "gaseosa salada",
       fechapublicacion: 2025
     },
