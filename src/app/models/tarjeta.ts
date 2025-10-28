@@ -1,5 +1,5 @@
 export interface Tarjeta {
-	id: string;
+	id: number;
 	img:string;
 	alt:string;
 	titulo: string;

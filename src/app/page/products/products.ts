@@ -14,7 +14,7 @@ public infoTarjeta: Tarjeta[];
 constructor(){
   this.infoTarjeta = [
     {
-      id: "1t",
+      id: 1,
       img: "../../../assets/campari.jpg",
       alt: "campari",
       titulo: "CAMPARI",
@@ -22,7 +22,7 @@ constructor(){
       fechapublicacion: 2025
     },
         {
-      id: "2t",
+      id: 2,
       img: "../../../assets/birra.jpg",
       alt: "birra",
       titulo: "BIRRA",
@@ -30,7 +30,7 @@ constructor(){
       fechapublicacion: 2025
     },
         {
-      id: "3t",
+      id: 3,
       img: "../../../assets/fernet.jpg",
       alt: "fernet",
       titulo: "FERNET",
@@ -38,7 +38,7 @@ constructor(){
       fechapublicacion: 2025
     },
         {
-      id: "4t",
+      id: 4,
       img: "../../../assets/gancia.jpg",
       alt: "gancia",
       titulo: "GANCIA",
@@ -46,7 +46,7 @@ constructor(){
       fechapublicacion: 2025
     },
     {
-      id: "5t",
+      id: 5,
         img: "../../../assets/malibu.jpg",
       alt: "malibu",
       titulo: "MALIBU",
@@ -54,7 +54,7 @@ constructor(){
       fechapublicacion: 2025
     },
         {
-      id: "6t",
+      id: 6,
         img: "../../../assets/vidka.jpg",
       alt: "vodka",
       titulo: "VODKA",
@@ -62,7 +62,7 @@ constructor(){
       fechapublicacion: 2025
     },
         {
-      id: "7t",
+      id: 7,
         img: "../../../assets/OIP (1).jpg",
       alt: "vino",
       titulo: "VINOS",
@@ -70,7 +70,7 @@ constructor(){
       fechapublicacion: 2025
     },
             {
-      id: "8t",
+      id: 8,
         img: "../../../assets/aperol.jpg",
       alt: "aperol",
       titulo: "APEROL",
