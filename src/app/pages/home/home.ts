@@ -12,28 +12,32 @@ public infoLicor: Licor[];
 constructor(){
   this.infoLicor = [
     {
-      id: "1t",
+      id: 1,
       img: "../../../assets/OIP (1).jpg",
       alt: "vino",
-      titulo: "VINO"
+      titulo: "VINO",
+      precio: 15000
     },
     {
-      id: "1t",
+      id: 1,
       img: "../../../assets/vidka.jpg",
       alt: "vodka",
-      titulo: "VODKA"
+      titulo: "VODKA",
+      precio: 12000
     },
     {
-      id: "1t",
+      id: 1,
       img: "../../../assets/campari.jpg",
       alt: "fernet",
-      titulo: "FERNET"
+      titulo: "FERNET",
+      precio: 11000
     },
     {
-      id: "1t",
+      id: 1,
       img: "../../../assets/campari.jpg",
       alt: "campari",
-      titulo: "CAMPARI"
+      titulo: "CAMPARI",
+      precio: 10000
     }
   ]
 }

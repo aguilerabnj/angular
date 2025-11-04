@@ -1,14 +1,14 @@
 <h1>CLASICOS</h1>
 <div class="container">
-    <h2>nuevo producto</h2>
-    	<div class="row">
-		<div *ngFor="let i of infoTarjeta" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+
+	<div class="row">
+		<div *ngFor="let i of infolicor" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
 			<div class="card">
 				<img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
 				<div class="card-body">
 					<h5 class="card-title">{{i.titulo}}</h5>
-					<p class="card-text">{{i.descripcion}} - {{i.fechapublicacion}}</p>
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hunger" (click)="verMas(i)">
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hunger"
+						(click)="verMas(i)">
 						HUNGER
 					</button>
 				</div>
@@ -16,15 +16,25 @@
 		</div>
 
 	</div>
-    <!-- <form [formGroup]="formGroup"> -->
-        <div class="mb3">
-            <label for="nombre" class="form-label">nombre</label>
-            <input id="nombre" type="text" class="form-control">
-        </div>
-        <div class="mb3"></div>
-        <div class="mb3"></div>
-    <!-- </form> -->
 </div>
+<!-- inserto de etiqueta formGroup para crear un formulario y la igualo a su nombre
+ [formGroup] -> DIrectiva de formularios reactivos-->
+<form [formGroup]="nuevolicor" (ngSubmit)="crearLicor()">
+	<div class="mb3">
+		<label for="titulo" class="form-label">nombre</label>
+		<!-- forControlName -> atributo que vincule con la informacion de mi propiedad -->
+		<input id="titulo" type="text" class="form-control" formControlName="titulo">
+	</div>
+	<div class="mb3">
+		<label for="precio" class="form-label">precuio</label>
+		<input id="precio" type="number" class="form-control" formControlName="precio">
+	</div>
+	<!-- el boton se  deshabilita  cuando el "nuevoproducto" no es valido
+	 ej faltan campos por rellenar o no cumplen el valor esperado -->
+	<button type="submit" class="btn-btn-primary w-100" [disabled]="!nuevoLicor.valid">guardar</button>
+</form>
+
+
 <div class="modal fade" id="hunger" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">

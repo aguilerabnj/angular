@@ -1,6 +1,7 @@
 export interface Licor {
-    id: string;
-	img:string;
-	alt:string;
+    id: number;
+	img?:string; //? indica que es opcional
+	alt?:string;
 	titulo: string;
+	precio: number;
 }
