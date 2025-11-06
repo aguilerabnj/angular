@@ -1,0 +1,11 @@
+H1{
+    font-size: 100PX;
+    text-align: center;
+}
+.card-img-top{
+	height: 200px;
+	object-fit: cover;
+}
+.container{
+	align-items: center;
+}

@@ -1,6 +1,6 @@
 <h1>CLASICOS</h1>
 <div class="container">
-
+<!-- este container conforma lo que almacena las tarjetas el row representaria una fila de tarjetas :D -->
 	<div class="row">
 		<div *ngFor="let i of infolicor" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
 			<div class="card">
@@ -17,22 +17,7 @@
 
 	</div>
 </div>
-<!-- inserto de etiqueta formGroup para crear un formulario y la igualo a su nombre
- [formGroup] -> DIrectiva de formularios reactivos-->
-<form [formGroup]="nuevolicor" (ngSubmit)="crearLicor()">
-	<div class="mb3">
-		<label for="titulo" class="form-label">nombre</label>
-		<!-- forControlName -> atributo que vincule con la informacion de mi propiedad -->
-		<input id="titulo" type="text" class="form-control" formControlName="titulo">
-	</div>
-	<div class="mb3">
-		<label for="precio" class="form-label">precuio</label>
-		<input id="precio" type="number" class="form-control" formControlName="precio">
-	</div>
-	<!-- el boton se  deshabilita  cuando el "nuevoproducto" no es valido
-	 ej faltan campos por rellenar o no cumplen el valor esperado -->
-	<button type="submit" class="btn-btn-primary w-100" [disabled]="!nuevoLicor.valid">guardar</button>
-</form>
+
 
 
 <div class="modal fade" id="hunger" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -44,7 +29,14 @@
 			</div>
 			<div class="modal-body">
 				<img src="{{tarjetaseleccionada?.img}}" alt="{{tarjetaseleccionada?.alt}}">
+				<div class="prize">
+					<!-- INTERPOLACION = INSERTO ALGO EN DOBLE LLAVES DEL TS AL HTML 
+					el ? para que acepte las propiedades 
+					-->
+					<h3>{{tarjetaseleccionada?.precio}}</h3>
+				</div>
 			</div>
+			
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 			</div>

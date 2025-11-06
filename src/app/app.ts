@@ -4,7 +4,7 @@ import { About } from "./page/about/about";
 import { Home } from './pages/home/home';
 import { Products } from './page/products/products';
 import { Contact } from './page/contact/contact';
-
+import { Ofertas } from './page/ofertas/ofertas';
 
 @Component({
   selector: 'app-root',

@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class Products {
 public infoTarjeta: Tarjeta[];
+/* dentro de constructor incializo infotarjeta, y en el constructor defino cada una de sus elementos */
 /* Declaramos */
 constructor(){
   this.infoTarjeta = [
