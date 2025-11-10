@@ -27,7 +27,7 @@ constructor(){
     },
     {
       id: 1,
-      img: "../../../assets/campari.jpg",
+      img: "../../../assets/fernet.jpg",
       alt: "fernet",
       titulo: "FERNET",
       precio: 15000

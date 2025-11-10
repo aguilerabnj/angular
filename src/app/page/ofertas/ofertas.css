@@ -1,7 +1,8 @@
 H1{
-    font-size: 100PX;
+    font-size: 5rem;
 	text-align: center;
 }
+
 .card-img-top{
 	height: 200px;
 	object-fit: cover;
@@ -15,6 +16,7 @@ H1{
 }
 
 .img-c{
-	height: 50rem;
+	height: 35rem;
+	width: 100%;
 	object-fit: cover;
 }
