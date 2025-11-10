@@ -5,4 +5,5 @@ export interface Tarjeta {
 	titulo: string;
 	descripcion: string;
 	fechapublicacion: number;
+	precio?: number;
 }

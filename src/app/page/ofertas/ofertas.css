@@ -7,9 +7,14 @@ H1{
 	object-fit: cover;
 }
 .imagen{
-	height: 200px;
+	height: 16rem;
 	object-fit: cover;
 }
 .container{
 	align-items: center;
+}
+
+.img-c{
+	height: 50rem;
+	object-fit: cover;
 }

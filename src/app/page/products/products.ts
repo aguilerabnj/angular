@@ -20,7 +20,8 @@ constructor(){
       alt: "campari",
       titulo: "CAMPARI",
       descripcion: "bebida roja ",
-      fechapublicacion: 2025
+      fechapublicacion: 2025,
+      precio: 13000
     },
         {
       id: 2,
@@ -28,7 +29,8 @@ constructor(){
       alt: "birra",
       titulo: "BIRRA",
       descripcion: "gaseosa salada",
-      fechapublicacion: 2025
+      fechapublicacion: 2025,
+      precio: 6000
     },
         {
       id: 3,
@@ -36,7 +38,8 @@ constructor(){
       alt: "fernet",
       titulo: "FERNET",
       descripcion: "bebida herbal",
-      fechapublicacion: 2025
+      fechapublicacion: 2025,
+      precio: 15000
     },
         {
       id: 4,
@@ -44,7 +47,8 @@ constructor(){
       alt: "gancia",
       titulo: "GANCIA",
       descripcion: "bebida tomada con sprite",
-      fechapublicacion: 2025
+      fechapublicacion: 2025,
+      precio: 11000
     },
     {
       id: 5,
@@ -52,7 +56,8 @@ constructor(){
       alt: "malibu",
       titulo: "MALIBU",
       descripcion: "bebida tropical",
-      fechapublicacion: 2025
+      fechapublicacion: 2025,
+      precio: 14000
     },
         {
       id: 6,
@@ -60,7 +65,8 @@ constructor(){
       alt: "vodka",
       titulo: "VODKA",
       descripcion: "clasica bebida fuerte",
-      fechapublicacion: 2025
+      fechapublicacion: 2025,
+      precio: 21000
     },
         {
       id: 7,
@@ -68,7 +74,8 @@ constructor(){
       alt: "vino",
       titulo: "VINOS",
       descripcion: "vino tinto, blanco, y rosa",
-      fechapublicacion: 2025
+      fechapublicacion: 2025,
+      precio: 15000
     },
             {
       id: 8,
@@ -76,7 +83,8 @@ constructor(){
       alt: "aperol",
       titulo: "APEROL",
       descripcion: "bebida a base de hierbas",
-      fechapublicacion: 2025
+      fechapublicacion: 2025,
+      precio: 12000
     }
     
   ]

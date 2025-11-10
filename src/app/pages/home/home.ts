@@ -23,21 +23,21 @@ constructor(){
       img: "../../../assets/vidka.jpg",
       alt: "vodka",
       titulo: "VODKA",
-      precio: 12000
+      precio: 21000
     },
     {
       id: 1,
       img: "../../../assets/campari.jpg",
       alt: "fernet",
       titulo: "FERNET",
-      precio: 11000
+      precio: 15000
     },
     {
       id: 1,
       img: "../../../assets/campari.jpg",
       alt: "campari",
       titulo: "CAMPARI",
-      precio: 10000
+      precio: 13000
     }
   ]
 }
