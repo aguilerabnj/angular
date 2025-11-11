@@ -21,3 +21,8 @@ img {
 .btn-action:hover{
 background-color: greenyellow;
 }
+.img-c{
+	height: 35rem;
+	width: 100%;
+	object-fit: cover;
+}

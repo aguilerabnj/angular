@@ -29,9 +29,8 @@ export class Contact {
    */
   nuevolicor = new FormGroup({
   titulo: new FormControl("", Validators.required),
-  precio: new FormControl(null,Validators.required ),
-  img: new FormControl(""),
-  alt: new FormControl("")
+  precio: new FormControl(null,Validators.required )
+
   })
 
 
@@ -52,5 +51,6 @@ crearLicor():void{
   console.log("Licor agregado",nuevoLicor)
   console.log("coleccion actual",this.coleccion)
 }
+this.nuevolicor.reset()
 }
 }

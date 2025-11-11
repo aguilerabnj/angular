@@ -20,3 +20,14 @@ H1{
 	width: 100%;
 	object-fit: cover;
 }
+
+/* Efecto de hover para mover la tarjeta */
+.card:hover {
+  transform: translateY(-8px) scale(1.05); /* Mueve ligeramente hacia arriba y aumenta el tamaño */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor */
+}
+
+/* Cambio de color al hacer hover sobre el botón */
+.card-body .btn:hover {
+  background-color: rgb(0, 9, 139);
+}

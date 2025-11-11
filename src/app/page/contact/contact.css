@@ -1,0 +1,70 @@
+form {
+  max-width: 500px;  /* Limita el ancho del formulario */
+  margin: 50px auto;  /* Centra el formulario en la página */
+  padding: 20px;
+  background-color: #fff;  /* Fondo blanco para el formulario */
+  border-radius: 8px;  /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+}
+
+/* Estilo para los títulos de los campos */
+.form-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;  /* Color oscuro para las etiquetas */
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Estilo para los campos de texto */
+input.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;  /* Borde gris suave */
+  border-radius: 6px;  /* Bordes redondeados */
+  font-size: 14px;
+  color: #333;
+  background-color: #fafafa;  /* Fondo suave */
+  transition: all 0.3s ease;  /* Transición suave al hacer hover */
+}
+
+input.form-control:focus {
+  border-color: #4CAF50;  /* Borde verde cuando el campo está en foco */
+  background-color: #fff;  /* Fondo blanco cuando está en foco */
+  outline: none;
+}
+
+/* Espaciado entre los campos del formulario */
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+/* Estilo para el botón de envío */
+button {
+  padding: 12px;
+  background-color:  rgb(0, 17, 255);;  /* Verde brillante */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;  /* Bordes redondeados */
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color:  rgb(0, 11, 163);;  /* Color más oscuro al pasar el ratón */
+}
+
+/* Deshabilitar el botón */
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Mensajes de error */
+.text-danger {
+  font-size: 12px;
+  color: #e74c3c;  /* Rojo para los mensajes de error */
+  margin-top: 5px;
+}
+

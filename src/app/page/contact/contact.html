@@ -1,4 +1,4 @@
-<H1>CONTACTANOS</H1>
+<H1>FORMULARIO DEMOSTRATIVO</H1>
 
 <div class="container">
     <div class ="boton">
@@ -8,6 +8,7 @@
 
 <!-- inserto de etiqueta formGroup para crear un formulario y la igualo a su nombre
  [formGroup] -> DIrectiva de formularios reactivos-->
+ <!-- agrupa las prpopiedades (formgroup) -->
 <form [formGroup]="nuevolicor" (ngSubmit)="crearLicor()">
 	<div class="mb3">
 		<label for="titulo" class="form-label">nombre</label>
@@ -20,5 +21,11 @@
 	</div>
 	<!-- el boton se  deshabilita  cuando el "nuevoproducto" no es valido
 	 ej faltan campos por rellenar o no cumplen el valor esperado -->
+
 	<button type="submit" class="btn-btn-primary w-100" [disabled]="!nuevolicor.valid">guardar</button>
 </form>
+
+<!-- el ng for funcionaba para recorrer el arreglo-->
+<ul class="list-group " *ngFor="let i of coleccion">
+  <li class="list-group-item">{{i.titulo}} - {{i.precio}}</li>
+</ul>
